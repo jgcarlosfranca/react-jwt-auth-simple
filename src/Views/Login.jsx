@@ -24,7 +24,7 @@ function Login() {
     event.preventDefault();
     try {
       const { data } = await axios.post(
-        "http://localhost:4000/login",
+        "http://localhost:5500/login",
         {
           ...values,
         },
@@ -43,7 +43,7 @@ function Login() {
       console.log(ex);
     }
   };
-  
+
   return (
     <div className="container">
       <h2>Login to your Account</h2>
@@ -72,7 +72,10 @@ function Login() {
         </div>
         <button type="submit">Submit</button>
         <span>
-          Don't have an account ?<Link to="/register"> Register </Link>
+          Don't have an account ?
+          <Link to="/register">
+            <u> Register</u>{" "}
+          </Link>
         </span>
       </form>
       <ToastContainer />
