@@ -8,7 +8,7 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route exact path="/redister" element={<Resgister />} />
+        <Route exact path="/register" element={<Resgister />} />
         <Route exact path="/login" element={<Login />} />
         <Route exact path="/" element={<Secret />} />
       </Routes>
