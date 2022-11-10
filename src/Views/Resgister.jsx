@@ -1,10 +1,23 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
+import { useCookies } from "react-cookie";
 import { ToastContainer, toast } from "react-toastify";
 
 function Resgister() {
   const [values, setValues] = useState({ email: "", password: "" });
+
+  const [cookies] = useCookies(["cookie-name"]);
+  const navigate = useNavigate();
+  useEffect(() => {
+    if (cookies.jwt) {
+      navigate("/");
+    }
+  }, [cookies, navigate]);
+  const generateError = (error) =>
+    toast.error(error, {
+      position: "bottom-right",
+    });
 
   const handleSubmit = async (event) => {
     event.preventDefault();
