@@ -6,14 +6,15 @@ import { ToastContainer, toast } from "react-toastify";
 
 function Resgister() {
   const [values, setValues] = useState({ email: "", password: "" });
-
-  const [cookies] = useCookies(["cookie-name"]);
+  const [cookies] = useCookies(["cookie-name"]); // pega a tag cookie-name
   const navigate = useNavigate();
+
   useEffect(() => {
     if (cookies.jwt) {
       navigate("/");
     }
   }, [cookies, navigate]);
+
   const generateError = (error) =>
     toast.error(error, {
       position: "bottom-right",
