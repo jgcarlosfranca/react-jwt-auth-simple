@@ -3,6 +3,9 @@ import { Link } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
 
 function Resgister() {
+  const [values, setValues] = useState({ email: "", password: "" });
+
+
   return (
     <div className="container">
       <h2>Register Account</h2>
