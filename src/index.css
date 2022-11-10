@@ -16,6 +16,7 @@ body {
     align-items: center;
     justify-content: center;
     background-image: url("../src/assets/img/hupao.jpg");
+    background-size: cover;
 }
 
 .container {
