@@ -13,14 +13,19 @@ body {
     background-color: rgb(236, 236, 238);
     overflow: hidden;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../src/assets/img/hupao.jpg");
 }
 
 .container {
-    background-color: white;
+    background-color: #E9C2BB;
     padding: 1rem 3rem;
     padding-bottom: 2rem;
     border-radius: 0.5rem;
-    border-top: rgb(80, 98, 255) 0.5rem solid;
+    border-top: #503441 0.5rem solid;
+    border-bottom: #503441 0.5rem solid;
+    opacity: 0.75;
 }
 
 h2 {
@@ -44,10 +49,11 @@ input {
     border-radius: 0.3rem;
     border: 1px solid gray;
     font-size: 1.1rem;
+    background-color: #E9C2BB;
 }
 
 button {
-    background-color: rgb(80, 98, 255);
+    background-color: #5D3C47;
     color: white;
     border: none;
     padding: 0.5rem;
@@ -59,13 +65,13 @@ button {
 
 span a {
     text-decoration: none;
-    color: rgb(80, 98, 255);
+    color: #5D3C47;
 }
 
 .private {
     height: 100vh;
     width: 100vw;
-    background-color: rgb(80, 98, 255);
+    background-color: #5D3C47;
     color: white;
     display: flex;
     justify-content: center;
