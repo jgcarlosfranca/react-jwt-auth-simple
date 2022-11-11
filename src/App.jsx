@@ -11,6 +11,7 @@ function App() {
         <Route exact path="/register" element={<Resgister />} />
         <Route exact path="/login" element={<Login />} />
         <Route exact path="/" element={<Secret />} />
+        <Route exact path="/secret" element={<Secret />} />
       </Routes>
     </BrowserRouter>
   );
