@@ -1,9 +1,11 @@
-import React from 'react'
+import React from "react";
 
 function Secret() {
   return (
-    <div>Secret</div>
-  )
+    <div>
+      <h1>Secret Page</h1>
+    </div>
+  );
 }
 
-export default Secret
+export default Secret;
