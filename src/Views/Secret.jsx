@@ -14,7 +14,7 @@ function Secret() {
         navigate("/login");
       } else {
         const { data } = await axios.post(
-          "http://localhost:5500",
+          "http://localhost:5500/checkUser",
           {},
           {
             withCredentials: true,
